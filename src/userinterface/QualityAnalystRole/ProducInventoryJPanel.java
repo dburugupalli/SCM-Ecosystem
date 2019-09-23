@@ -1,0 +1,228 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package userinterface.QualityAnalystRole;
+
+import Business.EcoSystem;
+import Business.Enterprise.Enterprise;
+import Business.Network.Network;
+import Business.Organization.Organization;
+import Business.Organization.ProductDepartment;
+import Business.Organization.QualityDepartment;
+import Business.Product.Product;
+import Business.Product.ProductList;
+import Business.UserAccount.UserAccount;
+import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
+
+import Business.Product.Product;
+import java.awt.CardLayout;
+import java.awt.Component;
+
+/**
+ *
+ * @author Dell
+ */
+public class ProducInventoryJPanel extends javax.swing.JPanel {
+
+    /**
+     * Creates new form ProducInventoryJPanel
+     */
+     private JPanel userProcessContainer;
+    private QualityDepartment organization;
+    private Enterprise enterprise;
+    private UserAccount userAccount;
+    private ProductDepartment dept;
+    private EcoSystem system;
+    public ProducInventoryJPanel(JPanel userProcessContainer,UserAccount userAccount,QualityDepartment organization,Enterprise enterprise,EcoSystem system) {
+        initComponents();
+        this.userProcessContainer = userProcessContainer;
+        this.organization = organization;
+        this.enterprise = enterprise;
+        this.userAccount = userAccount;
+        this.system = system;
+        //valueLabel.setText(enterprise.getName());
+        populateProductTable();
+    }
+    
+    public void populateProductTable(){
+        DefaultTableModel model = (DefaultTableModel) tblProductList.getModel();
+         model.setRowCount(0);
+         System.out.println("retriev");
+         System.out.println(system.getNetworkList().get(0));
+         System.out.println(system.getNetworkList().get(0).getEnterpriseDirectory().getEnterpriseList());
+         
+         for (Network network : system.getNetworkList()){
+             
+             System.out.println(network);
+             
+             for(Enterprise enterprise1 : network.getEnterpriseDirectory().getEnterpriseList()){
+                 if(enterprise1.equals(enterprise)){
+                     for(Organization org: enterprise1.getOrganizationDirectory().getOrganizationList()){
+                         if(org instanceof ProductDepartment){
+                             
+                             for(Product prod: ((ProductDepartment) org).getProdList().getProductList()){
+                    //System.out.println(prod.toString());
+                    
+                    Object[] row = new Object[7];
+                row[0] = prod.getProductId();
+                row[1] = prod.getProductName();
+                row[2] = prod.getProductPrice();
+                row[3] = prod.getProductCategory();
+                row[4] = prod.getQuantity();
+                row[5] = prod.getMfd_Date();
+                row[6] = prod.getQualityChecktatus();
+                 model.addRow(row);
+                  
+                    
+                }
+                         
+                         }
+                         
+                     
+                     }
+                 
+                 }
+             
+             }
+             
+            
+        }
+         
+        
+         
+         
+//         for(Enterprise enterprise: system.getNetworkList().get(0).getEnterpriseDirectory().getEnterpriseList()){
+//                      System.out.println(enterprise.getOrganizationDirectory().getOrganizationList()+"-----");
+//         
+//          for(Organization organization: enterprise.getOrganizationDirectory().getOrganizationList()){
+//              
+//              System.out.println(organization);
+//            if(organization instanceof ProductDepartment){
+//                for(Product prod:((ProductDepartment) organization).getProdList().getProductList()){
+//                    //System.out.println(prod.toString());
+//                    
+//                    Object[] row = new Object[7];
+//                row[0] = prod.getProductId();
+//                row[1] = prod.getProductName();
+//                row[2] = prod.getProductPrice();
+//                row[3] = prod.getProductCategory();
+//                row[4] = prod.getQuantity();
+//                row[5] = prod.getMfd_Date();
+//                row[6] = prod.getQualityChecktatus();
+//                 model.addRow(row);
+//                  
+//                    
+//                }
+//            }
+//        }
+         
+         
+         
+         
+        
+
+         
+         
+        
+        
+       
+        
+       
+        
+
+        
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblProductList = new javax.swing.JTable();
+        btnBack = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        tblProductList.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Product Id", "Product Name", "Unit Price", "Quantity", "Mfd Date", "Category", "Quality Check Status"
+            }
+        ));
+        tblProductList.setRowHeight(24);
+        jScrollPane1.setViewportView(tblProductList);
+
+        btnBack.setFont(new java.awt.Font("Gabriola", 1, 24)); // NOI18N
+        btnBack.setText("<<back");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Gabriola", 0, 24)); // NOI18N
+        jLabel1.setText("Product Inventory");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(247, 247, 247)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addComponent(btnBack)))
+                .addContainerGap(61, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(btnBack)
+                .addContainerGap(133, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // TODO add your handling code here:
+        
+        userProcessContainer.remove(this);
+         Component[] componentArray = userProcessContainer.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        QualityAnalystWorkAreaJPanel sysAdminwjp = (QualityAnalystWorkAreaJPanel) component;
+        //sysAdminwjp.populateTree();
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+        
+    }//GEN-LAST:event_btnBackActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBack;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable tblProductList;
+    // End of variables declaration//GEN-END:variables
+}

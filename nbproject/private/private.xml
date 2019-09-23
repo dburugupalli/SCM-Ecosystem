@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/SystemAdminWorkArea/SystemAdminWorkAreaJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/Wholesaler/OrderQueueJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Role/SupplyManager.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/QualityAnalystRole/ProcessRequestToAnotherNetworkJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/WorkQueue/OrderQueue.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Enterprise/Manufacture.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Role/QualityAnalyst.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/Wholesaler/WholeSalerWorkAreaJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/SystemAdminWorkArea/ManageNetworkJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Organization/Organization.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/AdministrativeRole/ManageUserAccountJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Role/SalesManager.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Enterprise/Enterprise.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/ProductManagerRole/ProductInventoryJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/ProductPricePrediction/productPrediction.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/AdministrativeRole/AdminWorkAreaJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/AdministrativeRole/ManageEmployeeJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/EcoSystem.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Organization/ProductDepartment.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Enterprise/Supplier.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/WorkQueue/OrderWorkRequest.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Enterprise/EnterpriseDirectory.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/Wholesaler/WholesalerProcessRequestJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Network/Network.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Product/ProductList.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/SystemAdminWorkArea/ManageEnterpriseAdminJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/SystemAdminWorkArea/ManageEnterpriseJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/AdministrativeRole/ManageOrganizationJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/ProductManagerRole/ProductManagerWorkAreaJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/QualityAnalystRole/ProducInventoryJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/WorkQueue/WorkRequest.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/MainJFrame.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/Supplier/SupplierInventoryJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/userinterface/QualityAnalystRole/QualityAnalystWorkAreaJPanel.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Organization/SalesDepartment.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/SupplyOrderDirectory.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Order.java</file>
+            <file>file:/C:/Users/Dell/aed_assignments/aed_final_project/technogeeks/SCMEcoSystem/src/Business/Product/Product.java</file>
+        </group>
+    </open-files>
+</project-private>
