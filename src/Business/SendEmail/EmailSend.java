@@ -1,10 +1,7 @@
 
 package SendEmail;
 
-/**
- *
- * @author Naveen
- */
+
 import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
@@ -14,10 +11,10 @@ public class EmailSend {
    void SendEmail(){
         try{
             String host ="smtp.gmail.com" ;
-            String user = "aed.springtechnogeeks2019@gmail.com";
-            String pass = "aedtechnogeeks";
-            String to = "aed.springtechnogeeks2019@gmail.com";
-            String from = "aedtechnogeeks";
+            String user = "<username>";
+            String pass = "<password>";
+            String to = "<To>";
+            String from = "<From>";
             String subject = "AED spring Module";
             String messageText = "Your Is Test Email : i am test";
             boolean sessionDebug = false;
